@@ -1,0 +1,41 @@
+  th.mat-header-cell {
+    text-transform: uppercase;
+  }
+  
+
+  
+  .mat-column-id,
+  .mat-column-name,
+  .mat-column-salary,
+  .mat-column-age {
+    text-align:justify;
+  }
+  
+  .mat-paginator {
+    margin-top: 10px;
+  } 
+  
+
+img {
+  width: 50px;
+  height: 50px;
+}
+table {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+mat-header-cell, mat-cell {
+  justify-content: center;
+}
+
+p{
+  padding-left: 250px;
+}
+
+.button
+{
+  position: relative;
+  float: right;
+}

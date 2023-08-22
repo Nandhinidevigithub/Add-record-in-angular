@@ -1,0 +1,43 @@
+<div class="bg">
+<p>
+<mat-toolbar color="accent">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)= "nav.toggle()">
+    <mat-icon >menu</mat-icon>
+  </button>
+  <span class="myclass">Angular Material</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-toolbar>
+</p>
+ 
+ 
+ <mat-drawer-container class="example-container">
+  <mat-drawer mode="side" closed #nav>
+    <div routerLink="home" class="sidenavopts" routerLinkActive="active">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+      Home
+    </div>
+    <div routerLink="dashboard" class="sidenavopts" routerLinkActive="active">
+      <mat-icon aria-hidden="false" aria-label="Example dashboard icon" fontIcon="dashboard"></mat-icon>
+      DashBoard
+    </div>
+    <div routerLink="profile" class="sidenavopts" routerLinkActive="active">
+      <mat-icon aria-hidden="false" aria-label="perm_identity icon" fontIcon="perm_identity"></mat-icon>
+      Profile
+    </div>
+    <div routerLink="logout" class="sidenavopts" routerLinkActive="active">
+      <mat-icon aria-hidden="false" aria-label="Example logout icon" fontIcon="logout"></mat-icon>
+      Logout
+    </div>
+  </mat-drawer>
+   <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+</mat-drawer-container> 
+</div>
